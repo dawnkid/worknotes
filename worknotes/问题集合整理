@@ -1,0 +1,5 @@
+HTTP请求payLoad及form提交的区别：
+	1、form提交的格式  Contetn-Type:application/x-www-form-urlencoded(默认就是此种方式)
+		参考：http://xxx/login?form=form&time=1
+	2、payload  Content-Type:application/json 
+		json格式传入参数

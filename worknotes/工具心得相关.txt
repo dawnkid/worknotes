@@ -1,0 +1,12 @@
+2017.10.18pm
+最近又在用SVN，之前外部项目一直用git，重新回顾了下，重新总结下。
+git svn 区别：
+	1、git是分布式版本管理工具，不依赖网络，任何分支都可以是主分支，命令行偏多，需专门培训，支持Linux，对Windows支持不好
+	2、SVN是集中式管理工具，有自己的版本号，有唯一的主版本分支，操作简单，更偏向与项目管理。
+
+
+idea使用SVN：
+	1、忽略指定文件、文件夹：	Version Control --> Local Changes --> Configure Ignored Files(按钮) --> 选择需要忽略的文件及文件夹，再点击旁边的刷新按钮
+
+idea pluging URL(下载idea的工具类插件再通过文件导入的方式导入)：
+	https://plugins.jetbrains.com
