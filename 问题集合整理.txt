@@ -1,0 +1,17 @@
+HTTP请求payLoad及form提交的区别：
+	1、form提交的格式  Contetn-Type:application/x-www-form-urlencoded(默认就是此种方式)
+		参考：http://xxx/login?form=form&time=1
+	2、payload  Content-Type:application/json 
+		json格式传入参数
+
+mongo数据导入导出：
+	json格式文件导出时自带_id 适合数据库迁移操作
+	导出数据：
+		mongoexport -d admin -c life -f "col1,col2,col3" -o /Users/wangruiyang652/Desktop/yourcoll-bk.json
+ 		mongoexport -d admin -c life --fields col1,col2,col3 --csv -o /Users/wangruiyang652/Desktop/data.csv
+
+	导入数据：
+		mongoimport -d admin -c life --file /Users/wangruiyang652/Desktop/yourcoll-bk.json
+ 		mongoimport --db admin --collection life --type csv --headerline --file /Users/wangruiyang652/Desktop/data.csv
+	具体参考：http://www.jb51.net/article/68922.htm
+			官方API：https://docs.mongodb.com/manual/reference/program/mongoimport/
